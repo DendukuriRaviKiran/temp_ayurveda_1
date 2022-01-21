@@ -3,12 +3,15 @@ import styled from 'styled-components';
 import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
 import ChevronLeftOutlinedIcon from '@mui/icons-material/ChevronLeftOutlined';
 import { sliderItems } from '../data';
+import { mobile } from "../response";
 const Container = styled.div`
     width:100%;
     height: 100vh;
     display: flex;
     position: relative;
     overflow: hidden;
+    ${mobile({ display: "none" })}
+    
 `
 const Arrow = styled.div`
     width: 50px;
